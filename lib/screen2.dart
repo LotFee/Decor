@@ -55,9 +55,10 @@ import 'package:flutter/services.dart';
                       SizedBox(height: 50, child:  TextFormField(
                         keyboardType: TextInputType.text,
                         decoration: InputDecoration(
+                          labelText: "E-Mail",
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.grey  ),
+                            borderSide: BorderSide(color: Colors.deepPurpleAccent ),
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
@@ -73,9 +74,11 @@ import 'package:flutter/services.dart';
                          obscureText: true,
                          keyboardType: TextInputType.visiblePassword,
                          decoration: InputDecoration(
+                           labelText:"Password" ,
                            focusedBorder: OutlineInputBorder(
+
                              borderRadius: BorderRadius.circular(10),
-                             borderSide: BorderSide(color: Colors.grey  ),
+                             borderSide: BorderSide(color: Colors.deepPurpleAccent  ),
                            ),
                            border: OutlineInputBorder(
                              borderRadius: BorderRadius.circular(10),

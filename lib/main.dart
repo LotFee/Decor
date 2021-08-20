@@ -4,6 +4,10 @@ import 'package:flutter/services.dart';
 import 'screen2.dart';
 import 'screen1.dart';
 import 'screen3.dart';
+import 'chairs.dart';
+import 'nigthStands.dart';
+import 'sofas.dart';
+import 'desk.dart';
 
 
 void main() {
@@ -35,6 +39,10 @@ void main() {
          '/' :(context) => Screen1(),
          '/second': (context) => Sreen2(),
          '/third': (context)=> Screen3(),
+         '/chair': (context)=> chairScreen(),
+         '/night': (context)=> NightStands(),
+         '/sofa': (context)=> Sofas(),
+         '/desk': (context)=> Desk(),
        },
      );
    }

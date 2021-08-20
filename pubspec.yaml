@@ -62,6 +62,8 @@ flutter:
     - images/desk.png
     - images/desk2.jfif
     - images/desk5.jfif
+    - images/chairSliv.jfif
+    - images/icon-07.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

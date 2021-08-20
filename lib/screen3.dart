@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'screen2.dart';
+import 'chairs.dart';
+import 'nigthStands.dart';
 
 class Screen3 extends StatefulWidget {
   const Screen3({Key? key}) : super(key: key);
@@ -38,7 +40,7 @@ class _Screen3State extends State<Screen3> {
             DrawerHeader(
                 decoration:  BoxDecoration(
                   image: DecorationImage(
-                    image:  AssetImage('images/desk.png'),
+                    image:  AssetImage('images/desk.png',),
                   ),
                 ),
                 child: null),
@@ -146,44 +148,19 @@ class _Screen3State extends State<Screen3> {
             Row(
               children: [
                 Expanded(
-                  child: Stack(
-                    alignment: Alignment(-.9,-1),
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child:  Image.asset('images/chair4.jfif' ,width: 200 , height: 200,),
-                      ),
-                      Image.asset('images/icon-02.png' ,width: 40 , height: 40,),
-                      Positioned(
-                      top: 150,
-                      bottom: 0,
-                      right: 40,
-                      left: 20,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Chairs"),
-                          Row(
-                            children: [
-                              Text("From" , style: TextStyle(fontSize: 10 , fontWeight: FontWeight.bold),),
-                              Text("\$190.-" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
-                            ],
-                          ),
-                        ],
-                      ),),
-                    ],
-                  ),
-                ),
-                Expanded(
-                  child: Stack(
-                    alignment: Alignment(-.9,-1),
-                    children: [
-                     ClipRRect(
-                       borderRadius: BorderRadius.circular(10),
-                       child:  Image.asset('images/nightStand.jfif' ,width: 200 , height: 200,),
-                     ),
-                      Image.asset('images/icon-02.png' ,width: 40 , height: 40,),
-                      Positioned(
+                  child: GestureDetector(
+                    onTap: (){
+                      Navigator.pushNamed(context, '/chair');
+                    },
+                    child: Stack(
+                      alignment: Alignment(-.9,-1),
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(20),
+                          child:  Image.asset('images/chair4.jfif' ,width: 200 , height: 200,),
+                        ),
+                        Image.asset('images/icon-02.png' ,width: 40 , height: 40,),
+                        Positioned(
                         top: 150,
                         bottom: 0,
                         right: 40,
@@ -191,16 +168,51 @@ class _Screen3State extends State<Screen3> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Night Stands"),
+                            Text("Chairs"),
                             Row(
                               children: [
                                 Text("From" , style: TextStyle(fontSize: 10 , fontWeight: FontWeight.bold),),
-                                Text("\$140.-" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
+                                Text("\$190.-" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
                               ],
                             ),
                           ],
                         ),),
-                    ],
+                      ],
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: GestureDetector(
+                    onTap: (){
+                      Navigator.pushNamed(context, '/night');
+                    },
+                    child: Stack(
+                      alignment: Alignment(-.9,-1),
+                      children: [
+                       ClipRRect(
+                         borderRadius: BorderRadius.circular(10),
+                         child:  Image.asset('images/nightStand.jfif' ,width: 200 , height: 200,),
+                       ),
+                        Image.asset('images/icon-02.png' ,width: 40 , height: 40,),
+                        Positioned(
+                          top: 150,
+                          bottom: 0,
+                          right: 40,
+                          left: 20,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Night Stands"),
+                              Row(
+                                children: [
+                                  Text("From" , style: TextStyle(fontSize: 10 , fontWeight: FontWeight.bold),),
+                                  Text("\$140.-" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
+                                ],
+                              ),
+                            ],
+                          ),),
+                      ],
+                    ),
                   ),
                 ),
               ],
@@ -208,61 +220,71 @@ class _Screen3State extends State<Screen3> {
             Row(
               children: [
                 Expanded(
-                  child: Stack(
-                    alignment: Alignment(-.9,-1),
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child:  Image.asset('images/sofa.jfif' ,width: 200 , height: 200,),
-                      ),
-                      Image.asset('images/icon-02.png' ,width: 40 , height: 40,),
-                      Positioned(
-                        top: 145,
-                        bottom: 0,
-                        right: 40,
-                        left: 20,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Sofas"),
-                            Row(
-                              children: [
-                                Text("From" , style: TextStyle(fontSize: 10 , fontWeight: FontWeight.bold),),
-                                Text("\$420.-" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
-                              ],
-                            ),
-                          ],
-                        ),),
-                    ],
+                  child: GestureDetector(
+                    onTap: (){
+                      Navigator.pushNamed(context, '/sofa');
+                    },
+                    child: Stack(
+                      alignment: Alignment(-.9,-1),
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(20),
+                          child:  Image.asset('images/sofa.jfif' ,width: 200 , height: 200,),
+                        ),
+                        Image.asset('images/icon-02.png' ,width: 40 , height: 40,),
+                        Positioned(
+                          top: 145,
+                          bottom: 0,
+                          right: 40,
+                          left: 20,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Sofas"),
+                              Row(
+                                children: [
+                                  Text("From" , style: TextStyle(fontSize: 10 , fontWeight: FontWeight.bold),),
+                                  Text("\$420.-" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
+                                ],
+                              ),
+                            ],
+                          ),),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
-                  child: Stack(
-                    alignment: Alignment(-.9,-1),
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child:  Image.asset('images/desk5.jfif' ,width: 200 , height: 200,),
-                      ),
-                      Image.asset('images/icon-02.png' ,width: 40 , height: 40,),
-                      Positioned(
-                        top: 150,
-                        bottom: 0,
-                        right: 40,
-                        left: 20,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Desks"),
-                            Row(
-                              children: [
-                                Text("From" , style: TextStyle(fontSize: 10 , fontWeight: FontWeight.bold),),
-                                Text("\$320.-" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
-                              ],
-                            ),
-                          ],
-                        ),),
-                    ],
+                  child: GestureDetector(
+                    onTap: (){
+                      Navigator.pushNamed(context, '/desk');
+                    },
+                    child: Stack(
+                      alignment: Alignment(-.9,-1),
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(20),
+                          child:  Image.asset('images/desk5.jfif' ,width: 200 , height: 200,),
+                        ),
+                        Image.asset('images/icon-02.png' ,width: 40 , height: 40,),
+                        Positioned(
+                          top: 150,
+                          bottom: 0,
+                          right: 40,
+                          left: 20,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Desks"),
+                              Row(
+                                children: [
+                                  Text("From" , style: TextStyle(fontSize: 10 , fontWeight: FontWeight.bold),),
+                                  Text("\$320.-" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
+                                ],
+                              ),
+                            ],
+                          ),),
+                      ],
+                    ),
                   ),
                 ),
               ],

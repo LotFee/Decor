@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/services.dart';
-import 'screen2.dart';
-import 'screen1.dart';
-import 'screen3.dart';
-import 'chairs.dart';
-import 'nigthStands.dart';
-import 'sofas.dart';
-import 'desk.dart';
+import 'screens/screen2.dart';
+import 'screens/screen1.dart';
+import 'screens/screen3.dart';
+import 'components/chairs.dart';
+import 'components/nigthStands.dart';
+import 'components/sofas.dart';
+import 'components/desk.dart';
 
 
 void main() {

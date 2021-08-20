@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'screen2.dart';
-import 'chairs.dart';
-import 'nigthStands.dart';
+import '../components/chairs.dart';
+//import '../nigthStands.dart';
 
 class Screen3 extends StatefulWidget {
   const Screen3({Key? key}) : super(key: key);

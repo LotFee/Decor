@@ -50,6 +50,18 @@ flutter:
   assets:
     - images/
     - images/icon-01.png
+    - images/icon-05.png
+    - images/icon-03.png
+    - images/chair2.jfif
+    - images/icon-02.png
+    - images/night.jfif
+    - images/nightStand.jfif
+    - images/chair3.jfif
+    - images/chair4.jfif
+    - images/sofa.jfif
+    - images/desk.png
+    - images/desk2.jfif
+    - images/desk5.jfif
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

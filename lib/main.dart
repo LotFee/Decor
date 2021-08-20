@@ -3,6 +3,7 @@ import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/services.dart';
 import 'screen2.dart';
 import 'screen1.dart';
+import 'screen3.dart';
 
 
 void main() {
@@ -33,6 +34,7 @@ void main() {
        routes: {
          '/' :(context) => Screen1(),
          '/second': (context) => Sreen2(),
+         '/third': (context)=> Screen3(),
        },
      );
    }

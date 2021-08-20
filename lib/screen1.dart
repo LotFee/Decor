@@ -45,7 +45,9 @@ class Screen1 extends StatelessWidget {
                       style: TextButton.styleFrom(
                         primary: Colors.black, // foreground
                       ),
-                      onPressed: () { },
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/second' );
+                      },
                       child: Text('Sign in' , style: TextStyle(fontWeight: FontWeight.bold),),
                     )
                   ],

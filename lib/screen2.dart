@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/services.dart';
+import 'screen3.dart';
  class Sreen2 extends StatefulWidget {
    const Sreen2({Key? key}) : super(key: key);
 
@@ -96,7 +97,14 @@ import 'package:flutter/services.dart';
                      textColor: Colors.white,
                      shape: RoundedRectangleBorder(
                          borderRadius: BorderRadius.circular(18)),// foreground
-                     onPressed: () { },
+                     onPressed: () {
+                       Navigator.pushAndRemoveUntil(
+                         context,
+                         MaterialPageRoute(builder: (context) => Screen3()),
+                             (Route<dynamic> route) => false,
+                       );
+
+                     },
                      child: Text('     Create Account     ' , style: TextStyle(fontSize: 20), ),
                      padding: EdgeInsets.only(left: 15 , top:  10 , right:  15 , bottom:  10 ),
                    ),

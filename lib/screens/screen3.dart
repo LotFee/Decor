@@ -295,7 +295,7 @@ class _Screen3State extends State<Screen3> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(18)),// foreground
               onPressed: (){},
-              child: Text('     Scan My Space     ' , style: TextStyle(fontSize: 20), ),
+              child: Text('     Click on Any Card     ' , style: TextStyle(fontSize: 20), ),
               padding: EdgeInsets.only(left: 15 , top:  10 , right:  15 , bottom:  10 ),
             ),
 
